@@ -7,5 +7,12 @@
 
 
 def fun_set_kth_digit(n, k, d):
-		return 0
+	n = str(n)
+	n = n[-1::-1]
+	z = n[0:k] + str(d) + n[k+1:]
+	z = z[-1::-1]
+	if(n[-1]== '-'):
+		return -(int(z))
+	else:
+		return int(z)
 
