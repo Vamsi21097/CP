@@ -9,6 +9,20 @@
 # lookAndSay([3,3,8,-10,-10,-10]) == [(2,3),(1,8),(3,-10)]
 # lookAndSay([3,3,8,3,3,3,3]) == [(2,3),(1,8),(4,3)]
 
-def lookandsay(a):
+def lookandsay(n):
 	# Your code goes here
-	pass
+	if n == []:
+		return []
+	res = []	
+	c = 1	
+	a = n[0]	
+	for i in range(1, len(n)):
+		if n[i] == a:			
+			c += 1		
+		else:			
+			res.append((c, a))			
+			c = 1			
+			a = n[i]	
+	res.append((c, n[-1]))	
+	return res	
+	
