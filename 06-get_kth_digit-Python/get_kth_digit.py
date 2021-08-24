@@ -6,4 +6,12 @@
 
 
 def fun_get_kth_digit(digit, k):
-	return 0
+	digit = abs(digit)
+	l = len(str(digit))
+	if k >= l:
+		return 0
+	for i in range(0,k+1):
+		rem = digit%10
+		# print(rem)
+		digit = digit//10
+	return rem
