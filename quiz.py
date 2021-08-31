@@ -8,6 +8,7 @@ def bestQuiz(l):
     # Your  code goes ehre...
     pass
 
+
 def testBestQuiz():
     print('Testing bestQuiz()...', end='')
     a = [ [ 88,  80, 91 ],
